@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="all">
+<meta name="author" content="Tencent-TGideas">
+<meta name="Copyright" content="Tencent">
+<meta name="Description" content="升星不灵？特权升级" />
+<meta name="Keywords" content="QQ炫舞  6月幸运星  守护计划" />
+<title>6月幸运星</title>
+<!-- 页面设计：cp | 页面制作：cp | 创建：2018-06-16 -->
+<style type="text/css"> 
+/* reset */
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,p,form{margin:0; padding:0;}
+body{font:12px/1.5 tahoma,'\5b8b\4f53',sans-serif; padding-top:42px; background:#201a38;font-family:'\5FAE\8F6F\96C5\9ED1';}
+h1,h2,h3,h4,h5,h6{font-size:100%;}
+em,b,i{font-style:normal;}
+a{text-decoration:none;outline: none;}
+a:hover{text-decoration:none;}
+img{border:0;}
+button,input,select,textarea{font-size:100%;outline:none;}
+table{border-collapse:collapse;border-spacing:0;}
+td,th,ul,ol{padding:0;list-style-type:none;}
+.hidden{display:block;width:0;height:0;overflow:hidden;}
+.wrap-inner{ width:1000px; height:3606px; margin:0 auto;}
+.btn{background: url(ossweb-img/btn.png) no-repeat;margin: 0 auto;text-align: center;color: #461616;font-weight: bold;}
+.t{background:url(ossweb-img/text.png) no-repeat;}
+/* head */
+.head,.c1,.c2,.c3{width:1000px; margin:0 auto; position:relative;}
+.head{ height:638px;}
+.logo{position: absolute;width:150px;height:64px;top:26px;left:154px;}
+.logo_w{position: absolute;width: 310px;height: 115px;background: url(images/logo.png) no-repeat;top:81px;right:149px;}
+.h_time{font-size: 22px;color:#ffdc4d;text-align: center;padding-top:285px;font-weight: bold;}
+.h_login{font-size: 18px;color: #ffffff;text-align: center;margin-top:34px;}
+.h_login a{color: #ffdc4d;}
+.h_login .h_btn{width: 200px;height: 60px;line-height: 60px;font-size: 24px;display: block;color: #461616;margin-top:50px;}
+.h_logo{position: absolute;width:160px;height: 90px;left: 50%;margin-left:-855px;top:66px;background: url(ossweb-img/logo.png) no-repeat;}
+/*content*/
+.c1{height: 438px;}
+.cp{font-size: 18px;color:#b9b9b9;text-align: center;}
+.cp span{color: #f95302;}
+.cmenu{font-size: 0;text-align: center;margin-top:52px;}
+.cmenu .menu_item{display: inline-block;*display: inline;*zoom: 1;width: 300px;height: 160px;position: relative;vertical-align: top;}
+.cmenu .menu_item.center{margin: 0 50px;}
+.cmenu .mm{font-size: 0;text-align: center;margin-top:32px;}
+.cmenu .mm li{display: inline-block;*display: inline;*zoom: 1;position: relative;margin: 0 30px;width:70px;vertical-align: top;}
+.cmenu .mm p{font-size:14px;color: #b9b9b9;margin-top: 8px;}
+.cmenu .mm p.leng{white-space: nowrap;text-indent:-20px;}
+.cmenu .mm span{width: 40px;height: 15px;background-position:-210px 0;font-size: 12px;color: #1b1939;line-height: 15px;position: absolute;top: 0;right: 0;font-weight: normal;text-indent: 5px;}
+.cmenu .mm .yl{position: absolute;width: 37px;height: 37px;background-position:-290px 0;top: -15px;left: -15px;}
+.cmenu .menu_item .cbtn{position:absolute;bottom: -45px;left: 50%;margin-left: -50px;width: 100px;height: 35px;background-position: 0 -70px;font-size: 18px;line-height: 35px;}
+/*c2*/
+.c2{height: 406px;}
+.cmenu2 .mm{margin-top: 25px;}
+.cmenu2 .mm li{margin: 0 19px;}
+.cmenu2 .mm li.text{width: auto;text-align: left;margin: 0;}
+.cmenu2 .mm li.text p{font-size: 18px;color: #b9b9b9;}
+.cmenu2 .mm li.text p em{text-decoration: line-through;}
+.cmenu2 .mm li.text p span{color: #f95302;font-weight: bold;font-size: 24px;position:  inherit;}
+.cmenu2 .zk{font-size: 18px;color: #b9b9b9;text-align: center;}
+.cmenu2 .zk em{text-decoration: line-through;}
+.cmenu2 .zk span{font-weight: bold;color: #f95302;}
+.cmenu2 .cbtn span{color: #f95302;}
+/*c3*/
+.borderCp{width: 250px;height:24px;color: #f95302;font-size: 18px;margin: 0 auto 12px;border: 1px solid #f95302;line-height:24px;border-radius: 35px;text-align: center;}
+.cp em{display: inline-block;*display: inline;*zoom: 1;width: 22px;height: 22px;background-position: -260px 0;position: relative;top:3px;left: 4px;}
+.cp_title{font-size: 24px;color: #f95302;text-align: center;margin-top:20px;}
+.cp_title em{display: inline-block;*display: inline;*zoom: 1;width: 200px;height: 3px;background: #f95302;vertical-align: middle;margin: 0 20px;}
+.cp strong{font-size:24px;color: #f95302;}
+.cpt{margin-top: 16px;}
+.c3btnw{font-size: 0;text-align: center;margin-top: 20px;}
+.c3btnw a{width: 160px;height: 35px;line-height: 35px;background-position: 0 -115px;font-size: 18px;display: inline-block;*display: inline;*zoom: 1;margin: 0 15px;}
+.c3mw{position: relative;margin-top: 22px;}
+.c3mw span.add{position: absolute;width: 48px;height: 48px;background-position: -336px 0;top: 82px;}
+.c3mw span.add.f1{left: 196px;}
+.c3mw span.add.f2{left: 475px;}
+.c3mw span.add.f3{left: 755px;}
+.c3m{font-size: 0;}
+.c3m li{display: inline-block;*display: inline;*zoom: 1;text-align: center;margin-left: 120px;}
+.c3m li.ff{margin-left: 0;}
+.c3m .imgw{width: 160px;height: 160px;position: relative;}
+.c3m .imgw p{position: absolute;width: 100%;font-size: 14px;color: #b9b9b9;top: 122px;left: 0}
+.c3m .imgw p.two{top: 108px;line-height:16px;}
+.c3m h4{font-size:18px;color: #b2b2b2;font-weight: bold;margin-bottom: 4px;}
+.zb{width: 600px;height: 160px;background: url(ossweb-img/c3_img5.png) no-repeat;position: relative;text-align: center;margin:40px auto 0;}
+.zb h3{font-size: 24px;color: #f9c051;position: absolute;width: 100%;top: -18px;left: 0;}
+.zb p{font-size: 18px;color: #f95302;position: absolute;width: 100%;top: 128px;left: 0;font-weight: bold;}
+.cj{width: 100px;height: 35px;background-position: 0 -70px;font-size: 18px;line-height: 35px;display: block;margin:12px auto 15px;}
+.cpp{margin-top: 10px;}
+.cpp a{display: inline-block;*display: inline;*zoom: 1;width:70px;height: 30px;background-position: 0 -160px;font-size: 18px;margin-left: 5px;line-height: 30px;}
+.startw{width: 752px;height: 474px;background: url(ossweb-img/c3_bg.png) no-repeat;margin:30px 0 0 98px;position:relative;}
+.start{font-size: 0;text-align: center;height:92px;position: relative;padding-top: 24px;margin-bottom: 2px;}
+.start_in{display: inline-block;position: relative;}
+.start i{width: 38px;height: 36px;background-position:-48px -200px;display: inline-block;*display: inline;*zoom: 1;margin: 0 8px;vertical-align: top;}
+.start i.full{background-position: 0 -200px;}
+.start .start_num{display: inline-block;*display: inline;*zoom: 1;font-size:18px;color: #b9b9b9;vertical-align: top;height: 36px;line-height: 36px;}
+.start .start_num span{color: #f95302;}
+.start_text{font-size:18px;color: #b9b9b9;margin-top:15px;}
+.start_btn{position: absolute;top:30px;right: -100px;width: 70px;height: 30px;background-position: 0 -160px;font-size: 18px;line-height: 30px;}
+.rule{margin-top:60px;font-size: 0;}
+.rule dt{width: 160px;height: 40px;background-position: 0 -210px;text-indent: -9999px;margin-bottom: 10px;}
+.rule dd{vertical-align: top;font-size: 16px;color: #b9b9b9;margin-bottom: 5px;}
+.rule em,.rule span{display:inline-block;*display: inline;*zoom: 1;vertical-align: top;}
+.rule em{width: 20px;margin-right: 5px;}
+.rule span{width:975px;}
+.rule a{color: #b9b9b9;}
+.tabNav{width:596px;height: 76px;border: 2px solid #765b6a;margin:36px auto 0;border-radius: 76px;font-size: 0;white-space: nowrap;}
+.tabNav .tabNav_item{display: inline-block;*display: inline;*zoom: 1;width: 50%;height: 76px;position:relative;cursor: pointer;}
+.tabNav .tabNav_item span{position: absolute;top: 50%;left: 50%;margin: -24px 0 0 -122px;width:245px;height: 48px;}
+.tabNav .item1 span{background-position: 0 -158px;}
+.tabNav .item2 span{background-position: 0 0;}
+.tabNav .item1.on span{background-position: 0 -105px;}
+.tabNav .item2.on span{background-position: 0 -53px;}
+.tabNav .item2 i{width:32px;height: 32px;background-position:-210px -25px;position:absolute;top: 5px;right: 20px;}
+.tabs .tab_item{display: none;}
+.tabs .tab_item.on{display: block;}
+.items{font-size: 0;text-align: center;margin:50px 0 30px 0;}
+.items .items_in{display: inline-block;*display: inline;*zoom: 1;width: 360px;height: 200px;background: url(ossweb-img/t_b.png) no-repeat;position: relative;margin: 0 36px;}
+.items .mm{font-size: 0;text-align: center;margin-top:32px;}
+.items .mm li{display: inline-block;*display: inline;*zoom: 1;position: relative;margin: 0 30px;width:70px;vertical-align: top;}
+.items .mm p{font-size:14px;color: #b9b9b9;margin-top: 8px;}
+.items .mm span{width: 40px;height: 15px;background-position:-210px 0;font-size: 12px;color: #1b1939;line-height: 15px;position: absolute;top: 0;right: 0;font-weight: normal;text-indent: 5px;}
+.items .items_btn{width: 160px;height: 35px;background-position: 0 -115px;font-size: 18px;line-height: 35px;display: block;margin-top: 16px;}
+.items .items_in h3{position: absolute;width: 100%;font-size:24px;color: #f9c051;top: -18px;left: 0;}
+.item_btn{display: block;width: 100px;height: 35px;background-position: 0 -70px;font-size: 18px;line-height: 35px;margin-top: 20px;}
+/* 延迟加载 */
+.bg_box{width:100%;min-width:1000px; position:absolute; left:0; top:42px; z-index:-1;}
+.bg_box_in{width:1000px; min-width:1000px; margin:0 auto;}
+.bg1{ height:300px;}
+.bg2{ height:1100px;}
+.bg3{ height:2206px;}
+.d1{ background:url(ossweb-img/bg1.jpg) no-repeat center top;}
+.d2{ background:url(ossweb-img/bg2.jpg) no-repeat center top;}
+.d3{ background:url(ossweb-img/bg3.jpg) no-repeat center top;}
+/* footer */
+#footer_ied{ width:100%; height:100px; text-align:center; font-size:12px;background: #000000;line-height:20px; color:#a1a1a1; padding-top:15px;min-width:1100px; overflow:hidden;}
+#footer_ied .wrap_ied { margin:0 auto; padding-top:10px; width:1100px;}
+#footer_ied p.e { font-size:10px; -webkit-text-size-adjust:none;}
+#footer_ied a { color:#a1a1a1; text-decoration:none;}
+#footer_ied a:hover { text-decoration:underline;}
+/*左侧边栏*/
+.nav-left {position: fixed;left:10%;top:210px;width:57px;-webkit-animation: leftward 1s 2s ease both;animation: leftward 1s 2s ease both;}
+.nav-left .home-btn {display:block;width:57px;height:66px;background:url(ossweb-img/snav.png) no-repeat;background-position:-9px -36px;}
+.nav-line {display:block;width:5px;height:429px;background:url(ossweb-img/snav.png) no-repeat;background-position:-19px -123px;position:absolute;top:66px;left:25px;}
+.nav-list a{display:block;height:53px;position:relative;}
+.nav-list {margin-top:14px;}
+.text-l {font-size:14px;font-weight:bold;color:#b17c90;position:absolute;width:110px;height:48px;line-height:48px;top:-3px;left:-100px;text-align: right;}
+.text-r{font-size:14px;font-weight:bold;color:#b17c90;position:absolute;width:110px;height:48px;line-height:48px;top:-3px;right:-100px;text-align: left;}
+.nav-list .on .dian {display:block;width:29px;height:11px;background:url(ossweb-img/snav.png) no-repeat;background-position:-9px -9px;position:absolute;top:16px;left:13px;}
+.nav-list .on .text-l {font-size:18px;font-weight:bold;color:#eeaf36;top:-2px;}
+.nav-list .on .text-r {font-size:18px;font-weight:bold;color:#eeaf36;top:-2px;}
+.nav-list a:hover .text-l {font-weight:bold;color:#eeaf36;}
+.nav-list a:hover .text-r{font-weight:bold;color:#eeaf36;}
+.nav-list a:hover .dian {display:block;width:29px;height:11px;background:url(ossweb-img/snav.png) no-repeat;background-position:-9px -9px;position:absolute;top:16px;left:13px;}
+@keyframes leftward{
+    0%{-webkit-transform:translateX(-50px);opacity:0}
+    100%{-webkit-transform:translateY(0);opacity:1}
+}
+@-webkit-keyframes leftward{
+    0%{-webkit-transform:translateX(-50px);opacity:0}
+    100%{-webkit-transform:translateY(0);opacity:1}
+}
+.nav-right{width: 222px;height: 405px;background: url(ossweb-img/rnav.png) no-repeat;position: fixed;top: 50%;right: 0;margin-top: -202px;}
+.nav_btn{width:195px;text-align: center;font-size: 20px;color: #fbeed9;margin-top: 80px;float: right;}
+.nav_btn span{display: block;height: 60px;margin-top: 2px;line-height: 60px;cursor: pointer;}
+.nav_btn span.two{line-height:26px;padding-top: 4px;height: 56px;}
+.nav_btn span.on{color: #f95302;}
+/*弹窗*/	
+.dialog1{width:788px;height:699px;background:url(ossweb-img/tc.png) no-repeat;position:relative;outline: none;}
+.d1-conn{width:656px;height:699px;position:absolute;top:0px;left:40px;}
+.d1-title{width:100%;text-align:center;font-size:24px;color:#ffffff;font-weight:bold;padding-top:35px;}
+.d1-conn table{width:656px;height:341px;position:absolute;top:80px;left:0px;}
+.d1-conn table tr{font-size:16px;color:#96683c;text-align:center;}
+.d1-conn .table-title{height:58px;line-height:58px;font-size:18px;color:#fff3e4;font-weight:bold;text-align:center;}
+.d1-conn .table-title1{width:124px;}
+.d1-conn .table-title2{width:126px;}
+.d1-conn .table-title3{width:130px;}
+.d1-conn .table-title4{width:77px;}
+.d1-conn .table-title5{width:92px;}
+.d1-conn .table-title6{width:107px;}
+.d1-conn .table-title2{line-height:20px;}
+.d1-conn .table-title1 em{font-size:16px;color:#f1e5c8;font-weight:normal;}
+.d1-desc{width:100%;text-align:center;font-size:14px;color:#96683c;position:absolute;top:440px;left:0px;}
+.d1-desc em{color:#ff3600;}
+.d1-qa{width:450px;height:180px;position:absolute;top:490px;left:15px;}
+.d1-qa h2{font-size:24px;color:#96683c;font-weight:bold;margin-bottom:5px;}
+.d1-qa p{font-size:16px;color:#96683c;margin-bottom:15px;}
+.d1-qa p em{font-weight:bold;}
+.closed{width:58px;height:55px;display:block;position:absolute;top:15px;right:0px;}
+</style>
+</head>
+<body>
+<div class="wrap-inner">
+	<!-- head S -->
+	<div class="head">
+    	<h1 class="hidden">6月幸运星</h1>
+    	<p class="hidden">生星不灵？特权升级</p>
+    	<a href="//x5.qq.com/main.shtml" target="_blank" class="h_logo" title="QQ炫舞" onclick="PTTSendClick('btn','logo','QQ炫舞');"></a>
+    	<p class="h_time">活动时间：2018年6月20日-2018年7月20日</p>
+    	<div class="h_login">
+	        <p id="unlogin" style="display: block;">
+	        	您好，请 <a href="javascript:;" id="dologin" onclick="PTTSendClick('btn','login','登录');">[登录]</a>
+	        	<a href="javascript:;" class="h_btn btn" title="我是哪颗星">我是哪颗星</a>
+	        </p>
+	        <p id="logined" style="display: none;">欢迎您，<span id="login_qq_span"></span>，
+				<span id="spanNotBind_442380">
+					<a href="javascript:amsInit(139326, 442379);" onclick="PTTSendClick('btn','bind','绑定大区');">绑定大区</a>
+				</span>
+				<span id="spanBind_442380" style="display:none">
+					<span id="area_info_442380"></span>
+					<span id="role_info_442380"></span>
+					<a href="javascript:amsInit(139326, 442379);" onclick="PTTSendClick('btn','unbind','绑定大区');">更改绑定</a>
+				</span>	
+				<a href="javascript:;" id="dologout" onclick="PTTSendClick('btn','unlogin','注销');">[注销]</a>
+				<!--文案可以改变-->
+				<a href="javascript:;" class="h_btn btn" title="星">金星</a>
+	        </p>	
+		</div>
+    </div>
+    <!-- head S -->
+    <!-- content S -->
+    <div class="c1">
+    	<h2 class="hidden">礼包专栏</h2>
+    	<p class="cp">金银铜排排站，<span>金星</span>用户领<span>金星</span>，<span>银星</span>用户领<span>银星</span>，<span>铜星</span>用户领<span>铜星</span>，要想翻身靠升星<br />（通过任务，改变星级，领专属礼包，3个礼包只能领取1个哦）</p>
+    	<div class="cmenu">
+    		<div class="menu_item">
+    			<h3 class="hidden">金星礼包</h3>
+    			<ul class="mm">
+    				<li class="hover">
+    					<img src="ossweb-img/c1_img1.png" width="70" height="70" alt="病名懵懂" class="scal"/>
+    					<p>病名懵懂</p>
+    					<i class="btn yl"></i>
+    					<span class="btn">永久</span>
+    					<div class="smf">
+    						<div class="f1">
+    							<img src="ossweb-img/gif1.gif" width="260" alt="病名懵懂"/>
+    						</div>
+    						<div class="f2">
+    							<img src="ossweb-img/gif2.gif" width="240" alt="病名懵懂"/>
+    						</div>
+    						<i class="sanjiaoxing"></i>
+    					</div>
+    					<style type="text/css">
+    						.smf{position: absolute;width:480px;height:340px;background: #1e2022;top:-360px;left:-208px;white-space: nowrap;display: none;}
+    						.smf div{display: inline-block;*display: inline;*zoom: 1;width:240px;height:340px;position: relative;overflow: hidden;}
+    						.smf div img{position: absolute;}
+    						.smf div.f1{border-right: 1px solid #ffdc4d;}
+    						.smf div.f1 img{top: -56px;left: -9px;}
+    						.smf div.f2 img{top: -25px;left:0;}
+    						.sanjiaoxing{position: absolute;bottom: -20px;left: 222px;width:0;height:0;border-left:20px solid transparent;border-right:20px solid transparent;border-top:20px solid #ffdc4d;}
+    						.menu_item .hover:hover .smf{display: block;}
+    						.scal{animation:ss 0.8s both infinite alternate;}
+    						@keyframes ss{
+    							from{transform: scale(0.95);}
+    							to{transform: scale(1);}
+    						}
+    					</style>
+    				</li>
+    				<li>
+    					<img src="ossweb-img/c1_img2.png" width="70" height="70" alt="行行好吧"/>
+    					<p>行行好吧</p>
+    					<span class="btn">永久</span>
+    				</li>
+    			</ul>
+    			<a href="javascript:alert('敬请期待！');" class="btn cbtn" title="点击领取" onclick="PTTSendClick('btn','djlq','点击领取');">点击领取</a>
+    		</div>
+    		<div class="menu_item center">
+    			<h3 class="hidden">银星礼包</h3>
+    			<ul class="mm">
+    				<li>
+    					<img src="ossweb-img/c1_img3.png" width="70" height="70" alt="萌爪汪汪/摇尾萌汪"/>
+    					<p class="leng">萌爪汪汪/摇尾萌汪</p>
+    					<span class="btn">永久</span>
+    				</li>
+    				<li>
+    					<img src="ossweb-img/c1_img4.png" width="70" height="70" alt="秘密花园"/>
+    					<p>秘密花园</p>
+    					<span class="btn">30天</span>
+    				</li>
+    			</ul>
+    			<a href="javascript:alert('敬请期待！');" class="btn cbtn" title="点击领取" onclick="PTTSendClick('btn','djlq2','点击领取');">点击领取</a>
+    		</div>
+    		<div class="menu_item">
+    			<h3 class="hidden">铜星礼包</h3>
+    			<ul class="mm">
+    				<li>
+    					<img src="ossweb-img/c1_img5.png" width="70" height="70" alt="黄金卡片"/>
+    					<p>黄金卡片</p>
+    					<span class="btn">5个</span>
+    				</li>
+    				<li>
+    					<img src="ossweb-img/c1_img6.png" width="70" height="70" alt="多宠竞技券"/>
+    					<p>多宠竞技券</p>
+    					<span class="btn">2个</span>
+    				</li>
+    			</ul>
+    			<a href="javascript:alert('敬请期待！');" class="btn cbtn" title="点击领取" onclick="PTTSendClick('btn','djlq3','点击领取');">点击领取</a>
+    		</div>
+    	</div>
+    </div>
+    <div class="c2">
+    	<h2 class="hidden">购买专栏</h2>
+    	<p class="cp">金银铜挑果果，<span>金星</span>可买<span>金银铜</span>，<span>银星</span>可买<span>银和铜</span>，<span>铜星</span>惨惨<span>只能铜</span>，要想都买靠升星</p>
+    	<div class="cmenu cmenu2">
+    		<div class="menu_item">
+    			<h3 class="hidden">金星折扣礼包</h3>
+    			<ul class="mm">
+    				<li>
+    					<img src="ossweb-img/c2_img1.png" width="70" height="70" alt="幻彩微型礼盒"/>
+    					<p style="white-space: nowrap;text-indent: -5px;margin-top: 2px;">幻彩微型礼盒</p>
+    					<span class="btn">1个</span>
+    				</li>
+    				<li>
+    					<img src="ossweb-img/c2_img2.png" width="70" height="70" alt="消费币"/>
+    					<p style="margin-top: 2px;">消费币</p>
+    					<span class="btn">500个</span>
+    				</li>
+    			</ul>
+    			<p class="zk">原价:<em>17.00</em>元  优惠价:<span>1.00</span>元</p>
+    			<a href="javascript:alert('敬请期待！');" class="btn cbtn" title="1元购买" onclick="PTTSendClick('btn','yyg1','1元购买');"><span>1元</span>购买</a>
+    		</div>
+    		<div class="menu_item center">
+    			<h3 class="hidden">银星折扣礼包</h3>
+    			<ul class="mm">
+    				<li style="margin: 0 16px 0 0;">
+    					<img src="ossweb-img/c2_img3.png" width="70" height="70" alt="小型聚宝盆"/>
+    					<p>小型聚宝盆</p>
+    					<span class="btn">1个</span>
+    				</li>
+    				<li class="text">
+    					<p>原　价：<em>10.00</em>元</p>
+    					<p>优惠价：<span>1.00</span>元</p>
+    				</li>
+    			</ul>
+    			<a href="javascript:alert('敬请期待！');" class="btn cbtn" title="1元购买" onclick="PTTSendClick('btn','yyg2','1元购买');"><span>1元</span>购买</a>
+    		</div>
+    		<div class="menu_item">
+    			<h3 class="hidden">铜星折扣礼包</h3>
+    			<ul class="mm">
+    				<li style="margin: 0 16px 0 0;">
+    					<img src="ossweb-img/c2_img4.png" width="70" height="70" alt="八音盒"/>
+    					<p>八音盒</p>
+    					<span class="btn">5个</span>
+    				</li>
+    				<li class="text">
+    					<p>原　价：<em>5.00</em>元</p>
+    					<p>优惠价：<span>1.00</span>元</p>
+    				</li>
+    			</ul>
+    			<a href="javascript:alert('敬请期待！');" class="btn cbtn" title="1元购买" onclick="PTTSendClick('btn','yyg3','1元购买');"><span>1元</span>购买</a>
+    		</div>
+    	</div>
+    </div>
+    <div class="c3">
+    	<h2 class="hidden">守护计划</h2>
+    	<p class="borderCp">活动特权卡是什么鬼？</p>
+    	<p class="cp">活动特权卡是炫舞页面活动的大！王！卡！<br />All 重磅活动通用（加速任务完成）！小恩惠我们不care<em class="btn"></em></p>
+    	<h3 class="cp_title"><em></em>加入幸运星守护计划  享4重守护特权<em></em></h3>
+    	<p class="cp cpt">我已守护<strong>X</strong>个月&nbsp;&nbsp;&nbsp;我有特权卡<strong>X</strong>张</p>
+    	<div class="c3btnw">
+    		<a href="javascript:alert('敬请期待！');" class="btn" title="点击守护约定" onclick="PTTSendClick('btn','shyd','点击守护约定');">点击守护约定</a>
+    		<a href="javascript:alert('敬请期待！');" class="btn" title="领取奖励" onclick="PTTSendClick('btn','lqjl','领取奖励');">领取奖励</a>
+    		<a href="javascript:alert('敬请期待！');" class="btn" title="点击查看特权详情" onclick="PTTSendClick('btn','cktq','点击查看特权详情');">点击查看特权详情</a>
+    	</div>
+    	<div class="c3mw">
+    		<span class="btn add f1"></span>
+    		<span class="btn add f2"></span>
+    		<span class="btn add f3"></span>
+    		<ul class="c3m">
+	    		<li class="ff">
+	    			<h4>专属道具</h4>
+	    			<div class="imgw">
+	    				<img src="ossweb-img/c3_img1.png" width="160" height="160" alt="莹草绿印"/>
+	    				<p>莹草绿印</p>
+	    			</div>
+	    		</li>
+	    		<li>
+	    			<h4>点券&给力币</h4>
+	    			<div class="imgw">
+	    				<img src="ossweb-img/c3_img2.png" width="160" height="160" alt="最多20000点券&30000给力币"/>
+	    				<p class="two">最多20000点券<br />&30000给力币</p>
+	    			</div>
+	    		</li>
+	    		<li>
+	    			<h4>活动特权卡</h4>
+	    			<div class="imgw">
+	    				<img src="ossweb-img/c3_img3.png" width="160" height="160" alt="加速任务完成"/>
+	    				<p>加速任务完成</p>
+	    			</div>
+	    		</li>
+	    		<li>
+	    			<h4>周边抽奖</h4>
+	    			<div class="imgw">
+	    				<img src="ossweb-img/c3_img4.png" width="160" height="160" alt="每月更新"/>
+	    				<p>每月更新</p>
+	    			</div>
+	    		</li>
+	    	</ul>
+    	</div>
+    	<p class="cp" style="margin-top: 40px;">当月累计登录5天可进行第一次守护，第一次将被视为加入幸运星守护计划<br />加入计划后，次月只需登录1次游戏/小灵通游戏模式即可维持守护状态</p>
+    	<div class="zb">
+    		<h3>本月周边抽奖福利</h3>
+    		<p>猫王音箱</p>
+    	</div>
+    	<a href="javascript:alert('敬请期待！');" class="btn cj" title="点击抽奖" onclick="PTTSendClick('btn','djcj','点击抽奖');">点击抽奖</a>
+    	<p class="cp cpt">我有<strong>X</strong>次抽奖机会&nbsp;&nbsp;&nbsp;PS：每天只能抽一次哦</p>
+    	<!--切换-->
+    	<div class="tabNav">
+    		<div class="tabNav_item item1 on">
+    			<span class="t"></span>
+    		</div>
+    		<div class="tabNav_item item2">
+    			<span class="t"></span>
+    			<i class="btn"></i>
+    		</div>
+    	</div>
+    	<div class="tabs">
+    		<div class="tab_item on">
+    			<h3 class="cp_title"><em></em>星星等级不够用？<em></em></h3>
+    			<p class="cp" style="margin-top:10px;">加入升星计划，完成任务即可领取幸运星，每集满25颗幸运星，即可升星</p>
+    			<p class="cp cpp">当前身份：X 星<a href="javascript:alert('敬请期待!');" class="btn" title="查询" onclick="PTTSendClick('btn','cx','查询');">查询</a>&nbsp;&nbsp;消耗25颗幸运星<a href="javascript:alert('敬请期待!');" class="btn" title="升星" onclick="PTTSendClick('btn','sx','升星');">升星</a>&nbsp;&nbsp;当前幸运星：<strong>X</strong>颗</p>
+    			<div class="startw">
+    				<div class="start">
+    					<!--full满状态-->
+    					<div class="start_in">
+	    					<i class="btn full"></i>
+	    					<i class="btn"></i>
+	    					<i class="btn"></i>
+	    					<i class="btn"></i>
+	    					<i class="btn"></i>
+	    					<i class="btn"></i>
+	    					<i class="btn"></i>
+	    					<i class="btn"></i>
+	    					<i class="btn"></i>
+	    					<i class="btn"></i>
+	    					<p class="start_num">+<span>10</span>颗星</p>
+    						<a href="javascript:alert('敬请期待！');" class="btn start_btn" title="领取" onclick="PTTSendClick('btn','lq1','领取');">领取</a>
+    					</div>
+    					<p class="start_text">累积在游戏/炫舞小灵通游戏模式 登录5天（活动期间只能参与一次）</p>
+    				</div>
+    				<div class="start">
+    					<!--full满状态-->
+    					<div class="start_in">
+	    					<i class="btn"></i>
+	    					<i class="btn"></i>
+	    					<i class="btn"></i>
+	    					<i class="btn"></i>
+	    					<i class="btn"></i>
+	    					<i class="btn"></i>
+	    					<i class="btn"></i>
+	    					<p class="start_num">+<span>8</span>颗星</p>
+    						<a href="javascript:alert('敬请期待！');" class="btn start_btn" title="领取" onclick="PTTSendClick('btn','lq2','领取');">领取</a>
+    					</div>
+    					<p class="start_text">使用活动特权卡（活动期间只能参与一次）</p>
+    				</div>
+    				<div class="start">
+    					<!--full满状态-->
+    					<div class="start_in">
+	    					<i class="btn"></i>
+	    					<i class="btn"></i>
+	    					<i class="btn"></i>
+	    					<i class="btn"></i>
+	    					<i class="btn"></i>
+	    					<p class="start_num">+<span>3</span>颗星</p>
+    						<a href="javascript:alert('敬请期待！');" class="btn start_btn" title="领取" onclick="PTTSendClick('btn','lq3','领取');">领取</a>
+    					</div>
+    					<p class="start_text">每日登录游戏 / 炫舞小灵通游戏模式一次</p>
+    				</div>
+    				<div class="start">
+    					<!--full满状态-->
+    					<div class="start_in">
+	    					<i class="btn"></i>
+	    					<i class="btn"></i>
+	    					<i class="btn"></i>
+	    					<p class="start_num">+<span>1</span>颗星</p>
+    						<a href="javascript:alert('敬请期待！');" class="btn start_btn" title="领取" onclick="PTTSendClick('btn','lq4','领取');">领取</a>
+    					</div>
+    					<p class="start_text">每日进入梦工厂视频房间1次</p>
+    				</div>
+    			</div>
+    		</div>
+    		<div class="tab_item">
+    			<h3 class="cp_title"><em></em>升星速度不够快？<em></em></h3>
+    			<p class="cp" style="margin-top:10px;">不论你是哪颗星，开通1次豪华黄钻或超级会员即享直通金星特权，并附赠专属礼包</p>
+    			<div class="items">
+    				<div class="items_in">
+    					<h3>豪华黄钻礼包</h3>
+    					<ul class="mm">
+    						<li>
+    							<img src="ossweb-img/c3_img6.png" width="70" height="70" alt="十字共赏/虹宝甜蜜"/>
+    							<p style="white-space: nowrap;text-indent: -20px;">十字共赏/虹宝甜蜜</p>
+    							<span class="btn">永久</span>
+    						</li>
+    						<li>
+    							<img src="ossweb-img/c3_img7.png" width="70" height="70" alt="小鸡啾啾"/>
+    							<p>小鸡啾啾</p>
+    							<span class="btn">15天</span>
+    						</li>
+    					</ul>
+    					<a href="javascript:alert('敬请期待！');" class="items_btn btn" title="开通豪华黄钻" onclick="PTTSendClick('btn','kthz','开通豪华黄钻');">开通豪华黄钻</a>
+    				</div>
+    				<div class="items_in">
+    					<h3>豪华黄钻礼包</h3>
+    					<ul class="mm">
+    						<li>
+    							<img src="ossweb-img/c3_img8.png" width="70" height="70" alt="十字共赏/虹宝甜蜜"/>
+    							<p>霜纱落雪</p>
+    							<span class="btn">30天</span>
+    						</li>
+    						<li>
+    							<img src="ossweb-img/c3_img9.png" width="70" height="70" alt="默契搭档"/>
+    							<p>默契搭档</p>
+    							<span class="btn">30天</span>
+    						</li>
+    					</ul>
+    					<a href="javascript:alert('敬请期待！');" class="items_btn btn" title="开通超级会员" onclick="PTTSendClick('btn','kthy','开通超级会员');">开通超级会员</a>
+    				</div>
+    			</div>
+    			<p class="cp">温馨提示：本页面开通豪华黄钻时，仅限通过<span>Q点Q币</span>/<span>财付通</span>/<span>网银</span>/<span>微信</span>支付的用户领取礼包。<br />通过手机话费、短信开通的用户无法领取礼包。</p>
+    			<a href="javascript:alert('敬请期待！');" class="item_btn btn" title="直升金星" onclick="PTTSendClick('btn','zsjx','直升金星');">直升金星</a>
+    		</div>
+    	</div>
+    	<dl class="rule">
+    		<dt class="t">活动规则：</dt>
+    		<dd><em>1.</em><span>活动时间：2018年6月20日—2018年7月20日；</span></dd>
+    		<dd><em>2.</em><span>礼包专栏：符合身份的玩家可以领取对应身份的礼包，同时，也可以参与升星任务领取更高等级礼包。活动期间，礼包专栏的礼包只可以领取一次；</span></dd>
+    		<dd><em>3.</em><span>购买专栏：金星用户可以购买金星、银星和铜星的折扣道具，银星用户可以购买银星和铜星的折扣道具，铜星只可以购买铜星折扣礼包。同时，也可以参与升星任务购买更高等级的礼包。活动期间，购买专栏的金星、银星和铜星礼包只可以分别购买一次；</span></dd>
+    		<dd><em>4.</em><span>当月累计登录5天可进行第一次守护，第一次将被视为加入幸运星守护计划。加入计划后，次月只需登录1次游戏/小灵通游戏模式即可维持守护状态；</span></dd>
+    		<dd><em>5.</em><span>商城兑换链接：<a href="http://mall.qq.com/x5/detail.shtml?id=4966" title="前往商城兑换" target="_blank" onclick="PTTSendClick('btn','scdh','商城兑换链接');">http://mall.qq.com/x5/detail.shtml?id=4966</a></span></dd>
+    		<dd><em>6.</em><span>此活动的所有解释权归腾讯公司所有。</span></dd>
+    	</dl>
+    </div>
+    <!-- content E -->
+</div>
+<div class="bg_box">
+	<div class="bg1" delayLoad="d1"><div class="bg_box_in"></div></div>
+    <div class="bg2" delayLoad="d2"><div class="bg_box_in"></div></div>
+    <div class="bg3" delayLoad="d3"><div class="bg_box_in"></div></div>
+</div>
+<!--左侧导航-->
+<div class="nav-left">
+    <i class="nav-line"></i>
+    <a href="//x5.qq.com/cp/a20180613fad/index.htm" class="home-btn"></a>
+    <div class="nav-list">
+        <a href="//x5.qq.com/cp/a20180516xwmmc/page1.htm">
+            <span class="text-l">特权再升级！</span>
+            <i class="dian"></i>
+            <span class="text-r">5月幸运星</span>
+        </a>
+        <a href="//x5.qq.com/cp/a20180516xwmmc/page2.htm">
+            <span class="text-l">夏日嗨翻天！</span>
+            <i class="dian"></i>
+            <span class="text-r">6月福利预告</span>
+        </a>
+        <a href="//x5.qq.com/cp/a20180516xwmmc/page3.htm">
+            <span class="text-l">夏打盹zzZ！</span>
+            <i class="dian"></i>
+            <span class="text-r">"床"新坐骑</span>
+        </a>
+         <a href="http://x5.qq.com/cp/a20180605funsbattle/index.html">
+            <span class="text-l">世界杯狂欢！</span>
+            <i class="dian"></i>
+            <span class="text-r">最强粉丝战</span>
+        </a>
+      <a href="http://x5.qq.com/cp/a20180613fad/index.htm">
+            <span class="text-l">父亲节端午节！</span>
+            <i class="dian"></i>
+            <span class="text-r">稀有限定驾到</span>
+        </a>
+        <a href="javascript:;" class="on">
+            <span class="text-l">特权升级</span>
+            <i class="dian"></i>
+            <span class="text-r">6月幸运星</span>
+        </a>
+        <a href="javascript:;">
+            <span class="text-l"></span>
+            <i class="dian"></i>
+            <span class="text-r">待开启</span>
+        </a>
+    </div>
+</div>
+<!--you导航-->
+<div class="nav-right">
+	<div class="nav_btn">
+		<span>礼包专栏</span>
+		<span>购买专栏</span>
+		<span>守护计划</span>
+		<span class="two">升星计划<br />&金星直通车</span>
+		<span>TOP</span>
+	</div>
+</div>
+<div class="dialog1" id="test1"  style="display:none">
+	<div class="d1-conn">
+		<p class="d1-title">幸运星守护特权</p>
+		<table>
+		  <tr>
+		    <td class="table-title table-title1">完成守护月</td>
+		    <td class="table-title table-title2">专属道具 <br /><em>（莹草绿印）</em></td>
+		    <td class="table-title table-title3">活动特权卡</td>
+		    <td class="table-title table-title4">点券</td>
+		    <td class="table-title table-title5">给力币</td>
+		    <td class="table-title table-title6">周边抽奖</td>
+		  </tr>
+		  <tr>
+		    <td>0</td>
+		    <td>5天</td>
+		    <td>0</td>
+		    <td>20000</td>
+		    <td>10000</td>
+		    <td>0</td>
+		  </tr>
+		  <tr>
+		    <td>1</td>
+		    <td>7天</td>
+		    <td>1</td>
+		    <td>20000</td>
+		    <td>10000</td>
+		    <td>1次</td>
+		  </tr>
+		  <tr>
+		    <td>2</td>
+		    <td>10天</td>
+		    <td>1</td>
+		    <td>20000</td>
+		    <td>20000</td>
+		    <td>2次</td>
+		  </tr>
+		  <tr>
+		    <td>3</td>
+		    <td>15天</td>
+		    <td>2</td>
+		    <td>20000</td>
+		    <td>30000</td>
+		    <td>3次</td>
+		  </tr>
+		  <tr>
+		    <td>-</td>
+		    <td>-</td>
+		    <td>-</td>
+		    <td>-</td>
+		    <td>-</td>
+		    <td>-</td>
+		  </tr>
+		  <tr>
+		    <td>N</td>
+		    <td>15天</td>
+		    <td>2</td>
+		    <td>20000</td>
+		    <td>30000</td>
+		    <td>3次</td>
+		  </tr>
+		</table>
+		<p class="d1-desc">注：若守护中断，则守护月份清零，需要<em>重新</em>加入守护计划才可享受特权噢！</p>
+		<div class="d1-qa">
+			<h2>Q&amp;A</h2>
+			<p><em>【Q】</em>什么是活动特权卡？<br/><em>【A】</em>在可使用活动特权卡的活动中，可加快活动完成。</p>
+			<p><em>【Q】</em>关于周边抽奖？<br /><em>【A】</em>从5月幸运星开始,可在幸运星活动页面进行周边抽奖。</p>
+		</div>
+	</div>
+	<a href="javascript:void(0);" class="closed" title="关闭" onclick="closeDialog()"></a>
+</div>
+<script src="//ossweb-img.qq.com/images/js/milo_bundle/milo.js"></script>
+<script src="//ossweb-img.qq.com/images/js/jquery/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+$(".tabNav .tabNav_item").click(function(){
+	var t=$(this).index()
+	$(this).addClass("on").siblings(".tabNav_item").removeClass("on")
+	$(".tabs .tab_item").eq(t).addClass("on").siblings(".tab_item").removeClass("on")
+})
+//登录
+milo.addEvent(g("dologin"), "click", function() {
+    need("biz.login",function(LoginManager){
+    LoginManager.init({
+            needReloadPage:true
+        });
+        LoginManager.login();
+    });
+    return false;
+});
+milo.addEvent(g("dologout"), "click", function() {
+    need("biz.login",function(LoginManager){
+        LoginManager.logout();
+    });
+    return false;
+});
+milo.ready(function() {
+    need("biz.login",function(LoginManager){
+        LoginManager.checkLogin(function(){
+            g("login_qq_span").innerText= LoginManager.getUserUin();//获取QQ号
+        });
+    });
+});
+//侧导航
+arr=[580,1000,1400,2380,0];
+var span=$(".nav_btn span")
+span.click(function(){
+	var that=$(this).index();
+	$("body,html").stop().animate({'scrollTop':arr[that]},'swing')
+})
+//右侧导航
+$(window).on('scroll',function() {
+    var scrollTop = $(window).scrollTop();
+    if(scrollTop < arr[0]){
+    	span.removeClass("on")
+    }else if(scrollTop >arr[0]-50 && scrollTop < arr[1]){
+    	span.eq(0).addClass("on").siblings("span").removeClass("on")
+    }else if(scrollTop >arr[1]-50 && scrollTop < arr[2]){
+    	span.eq(1).addClass("on").siblings("span").removeClass("on")
+    }else if(scrollTop >arr[2]-50 && scrollTop < arr[3]){
+    	span.eq(2).addClass("on").siblings("span").removeClass("on")
+    }else if(scrollTop >arr[3]-50){
+    	span.eq(3).addClass("on").siblings("span").removeClass("on")
+    }
+});
+//弹窗
+function TGDialogS(e){
+    need("biz.dialog",function(Dialog){
+        Dialog.show({
+            id:e,
+            bgcolor:'#000', //弹出“遮罩”的颜色，格式为"#FF6600"，可修改，默认为"#fff"
+            opacity:70      //弹出“遮罩”的透明度，格式为｛10-100｝，可选
+        });
+    });
+}
+function closeDialog(){
+    need("biz.dialog",function(Dialog){
+        Dialog.hide();
+    });
+}
+</script>
+<script>
+//加载
+function loadjs(url){var obj=document.createElement("script");obj.setAttribute("src",url);document.body.appendChild(obj);return obj;}
+function delay_js(url,succ,v){var elem=loadjs(url);if(!succ)succ=function(){};if((navigator.userAgent.indexOf('MSIE')==-1)?false:true){elem.onreadystatechange=function(){if(this.readyState&&this.readyState=="loading") return;else succ(v);};}else elem.onload=function(){succ(v);};elem.onerror=function(){};};
+function addload(func){var old=window.onload;if(typeof window.onload!="function"){window.onload=func;}else{window.onload=function(){old();func();}}};
+need(["biz.delayLoad"]);
+</script>
+<!-- top foot条 -->
+<script src="//ossweb-img.qq.com/images/js/title.js"></script>
+<script src="//ossweb-img.qq.com/images/js/foot.js"></script>
+<!--通用统计代码-->
+<script src="//ossweb-img.qq.com/images/js/PTT/ping_tcss_tgideas_https_min.js"></script>
+<script>
+//此段代码不能放到外链JS中，
+var setSite={ //设置网站属性
+    siteType:"a20180616lucky", //必填项:"os"代表是官网，如果不是，则填写actName例如a20160701xxx
+    pageType:"index", //必填项:本页面的定位；按照页面含义填写例如main||list||detail||download||share||page1||pageN
+    pageName:"首页", //必填项:页面中文名
+    osact:0, //选填项:是否是官网专题(在官网运营的专题)boolean；默认是0；可以在链接上加入参数osact=1来灵活设置
+    ingame:0, //选填项:是否投放在游戏APP内boolean；默认是0；可以在链接上加入参数ingame=1来灵活设置
+    stayTime:0 //选填项:是否需要统计停留时长boolean；默认是0
+}
+if(typeof(pgvMain)=='function')pgvMain();//千万不能忘记！
+</script>
+</body>
+</html>
